@@ -1,8 +1,7 @@
-
-using System;
+﻿using System;
 using UnityEngine;
 
-public class Ship : MonoBehaviour
+public class ShipResource : MonoBehaviour
 {
     [SerializeField] private Resource health = new Resource(100f);
     [SerializeField] private Resource armor = new Resource(50f);
@@ -10,6 +9,16 @@ public class Ship : MonoBehaviour
 
     public Action OnDead;
     public Action OnTakeDamage;
+
+    public ShipResource(float health, float armor, float ammo)
+    {
+        this.health.SetMax(health);
+        this.health.RestoreMax();
+        this.armor.SetMax(armor);
+        this.armor.RestoreMax();
+        this.ammo.SetMax(ammo);
+        this.ammo.RestoreMax();
+    }
     
     public void TakeDamage(float damageValue)
     {

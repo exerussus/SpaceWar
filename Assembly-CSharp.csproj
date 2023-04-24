@@ -41,8 +41,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Resource\Scripts\Ship.cs" />
      <Compile Include="Assets\Resource\Scripts\Resource.cs" />
+     <Compile Include="Assets\Resource\Scripts\ShipResource.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\Resource" />

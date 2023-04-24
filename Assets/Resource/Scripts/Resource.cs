@@ -25,6 +25,12 @@ public struct Resource
         currentValue = maxValue;
     }
     
+    public void SetMax(float value)
+    {
+        if (value <= 0) return;
+        maxValue = value;
+    }
+    
     public void IncreaseMax(float value)
     {
         if (value <= 0) return;
