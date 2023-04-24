@@ -45,9 +45,14 @@
     <Analyzer Include="D:\Unity\2022.2.14f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Resource\Scripts\Weapon\Weapon.cs" />
      <Compile Include="Assets\Resource\Scripts\ShipParameter.cs" />
+     <Compile Include="Assets\Resource\Scripts\Weapon\ProjectileWeapon.cs" />
+     <Compile Include="Assets\Resource\Scripts\Weapon\WeaponParameter.cs" />
+     <Compile Include="Assets\Resource\Scripts\Weapon\ProjectileParameter.cs" />
      <Compile Include="Assets\Resource\Scripts\Resource.cs" />
      <Compile Include="Assets\Resource\Scripts\ShipResource.cs" />
+     <Compile Include="Assets\Resource\Scripts\Weapon\RayParameter.cs" />
      <Compile Include="Assets\Resource\Scripts\SpaceShip.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
@@ -56,6 +61,7 @@
      <Folder Include="Assets\Settings" />
      <Folder Include="Assets\Settings\Scenes" />
      <Folder Include="Assets\Resource\Sprites" />
+     <Folder Include="Assets\Resource\Scripts\Weapon" />
      <Folder Include="Assets\Resource\Prefabs" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Unity\2022.2.14f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
