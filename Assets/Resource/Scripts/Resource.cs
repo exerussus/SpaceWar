@@ -42,14 +42,24 @@ public struct Resource
     {
         if (value <= 0) return;
         currentValue += value;
+        if (currentValue > maxValue) currentValue = maxValue;
     }
     
     public void ReduceCurrent(float value)
     {
         if (value <= 0) return;
         currentValue -= value;
+        if (currentValue <= 0f)
+        {
+            currentValue = 0f;
+        }
     }
 
+    public void SetEmpty()
+    {
+        currentValue = 0f;
+    }
+    
     public bool GetIsEnough(float value)
     {
         return currentValue - value >= 0;
