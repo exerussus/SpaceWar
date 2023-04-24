@@ -48,20 +48,25 @@
      <Compile Include="Assets\Resource\Scripts\Weapon\Weapon.cs" />
      <Compile Include="Assets\Resource\Scripts\ShipParameter.cs" />
      <Compile Include="Assets\Resource\Scripts\Weapon\ProjectileWeapon.cs" />
-     <Compile Include="Assets\Resource\Scripts\Weapon\WeaponParameter.cs" />
      <Compile Include="Assets\Resource\Scripts\Weapon\ProjectileParameter.cs" />
+     <Compile Include="Assets\Resource\Scripts\SpaceShip.cs" />
+     <Compile Include="Assets\Resource\Scripts\Weapon\WeaponParameter.cs" />
      <Compile Include="Assets\Resource\Scripts\Resource.cs" />
      <Compile Include="Assets\Resource\Scripts\ShipResource.cs" />
      <Compile Include="Assets\Resource\Scripts\Weapon\RayParameter.cs" />
-     <Compile Include="Assets\Resource\Scripts\SpaceShip.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
+     <Folder Include="Assets\Resource\Models" />
      <Folder Include="Assets\Resource" />
      <Folder Include="Assets\Resource\Scripts" />
      <Folder Include="Assets\Settings" />
+     <Folder Include="Assets\Resource\VFX" />
      <Folder Include="Assets\Settings\Scenes" />
+     <Folder Include="Assets\Resource\Materials" />
+     <Folder Include="Assets\Resource\Weapons" />
      <Folder Include="Assets\Resource\Sprites" />
      <Folder Include="Assets\Resource\Scripts\Weapon" />
+     <Folder Include="Assets\Resource\Shaders" />
      <Folder Include="Assets\Resource\Prefabs" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Unity\2022.2.14f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -687,6 +692,9 @@
      <Reference Include="Unity.2D.IK.Runtime">
      <HintPath>E:\IT\Unity\SpaceWar\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.VisualEffectGraph.Runtime">
+     <HintPath>E:\IT\Unity\SpaceWar\Library\ScriptAssemblies\Unity.VisualEffectGraph.Runtime.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.RenderPipelines.Core.Runtime">
      <HintPath>E:\IT\Unity\SpaceWar\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
      </Reference>
@@ -710,6 +718,9 @@
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.Editor">
      <HintPath>E:\IT\Unity\SpaceWar\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualEffectGraph.Editor">
+     <HintPath>E:\IT\Unity\SpaceWar\Library\ScriptAssemblies\Unity.VisualEffectGraph.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
      <HintPath>E:\IT\Unity\SpaceWar\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
