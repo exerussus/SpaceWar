@@ -9,7 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 415339984}
-  - component: {fileID: 415339985}
+  - component: {fileID: 4819580719058155125}
+  - component: {fileID: 2689595864211507362}
+  - component: {fileID: 7863851611736488815}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -32,7 +34,7 @@ Transform:
   m_Father: {fileID: 3654144648822601608}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &415339985
+--- !u!114 &4819580719058155125
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -53,6 +55,30 @@ MonoBehaviour:
   ammo:
     currentValue: 75
     maxValue: 75
+--- !u!114 &2689595864211507362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415339983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7baae36cf6954a8088a9f726ae819890, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7863851611736488815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415339983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65f2aa6a1fa1414db41dc3d5712a0d23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3654144648822601622
 GameObject:
   m_ObjectHideFlags: 0
