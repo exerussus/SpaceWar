@@ -7,12 +7,16 @@ public class ShipResource : MonoBehaviour
     [SerializeField] private Resource armor = new Resource(50f);
     [SerializeField] private Resource ammo = new Resource(100f);
 
-    public Resource Health => health;
-    public Resource Armor => armor;
-    public Resource Ammo => ammo;
+    public float CurrentHealth => health.CurrentValue;
+    public float CurrentArmor => armor.CurrentValue;
+    public float CurrentAmmo => ammo.CurrentValue;
+    public float MaxHealth => health.MaxValue;
+    public float MaxArmor => armor.MaxValue;
+    public float MaxAmmo => ammo.MaxValue;
     
     public Action OnDead;
     public Action OnTakeDamage;
+    public Action OnSpendAmmo;
 
     public void SetResource(float health, float armor, float ammo)
     {
@@ -46,6 +50,7 @@ public class ShipResource : MonoBehaviour
     public void SpendAmmo(float value)
     {
         ammo.ReduceCurrent(value);
+        OnSpendAmmo?.Invoke();
     }
     
     public void RestoreArmor(float value)

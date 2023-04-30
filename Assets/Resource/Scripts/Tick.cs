@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class Tick : MonoBehaviour
 {
-    private float tickTime = 0.1f;
-    private float tickTimer;
-    
+    private static float _tickTime = 0.1f;
+    private static float _tickTimer;
+
+    public static float TickTime => _tickTime;
     public static Action OnFixedUpdate;
     public static Action OnTick;
 
     private void FixedUpdate()
     {
         OnFixedUpdate?.Invoke();
-        tickTimer += Time.fixedDeltaTime;
-        if (tickTime < tickTimer)
+        _tickTimer += Time.fixedDeltaTime;
+        if (_tickTime < _tickTimer)
         {
             OnTick?.Invoke();
-            tickTimer = 0f;
+            _tickTimer = 0f;
         }
     }
 }

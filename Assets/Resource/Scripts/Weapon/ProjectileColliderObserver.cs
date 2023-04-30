@@ -15,7 +15,6 @@ public class ProjectileColliderObserver : MonoBehaviour
     private void Start()
     {
         collider = collider == null ? GetComponent<Collider2D>() : collider;
-        if (collider == null) Debug.LogError("Collider not found.");
     }
 
     private void OnCollisionEnter(Collision other)
