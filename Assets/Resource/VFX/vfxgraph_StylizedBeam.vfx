@@ -455,7 +455,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.3499999940395355,"y":1.100000023841858,"z":1.0}'
+      m_SerializableObject: '{"x":0.15000000596046449,"y":1.100000023841858,"z":1.0}'
     m_Space: 2147483647
   m_Property:
     name: Scale
@@ -654,7 +654,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.AnimationCurve, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"frames":[{"time":0.0,"value":0.0,"inTangent":0.0,"outTangent":0.0,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":0.08750152587890625,"value":0.26885986328125,"inTangent":0.0,"outTangent":0.0,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":0.5468091368675232,"value":0.28077593445777895,"inTangent":-0.10410033911466599,"outTangent":-0.10410033911466599,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":0.9488643407821655,"value":0.2580690383911133,"inTangent":-0.496735543012619,"outTangent":-0.496735543012619,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":1.0541534423828126,"value":0.00946044921875,"inTangent":0.0,"outTangent":0.0,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false}],"preWrapMode":8,"postWrapMode":8,"version":1}'
+      m_SerializableObject: '{"frames":[{"time":0.0,"value":0.0,"inTangent":0.0,"outTangent":0.0,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":0.08750152587890625,"value":0.26885986328125,"inTangent":0.0,"outTangent":0.0,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":0.3259686827659607,"value":0.27369585633277895,"inTangent":-0.10410033911466599,"outTangent":-0.10410033911466599,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":0.6446956396102905,"value":0.2698488235473633,"inTangent":-0.496735543012619,"outTangent":-0.496735543012619,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":1.0541534423828126,"value":0.00946044921875,"inTangent":0.0,"outTangent":0.0,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false}],"preWrapMode":8,"postWrapMode":8,"version":1}'
     m_Space: 2147483647
   m_Property:
     name: Scale_x
@@ -3168,7 +3168,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.4000000059604645,"y":1.0,"z":1.0}'
+      m_SerializableObject: '{"x":0.20000000298023225,"y":1.0,"z":1.0}'
     m_Space: 2147483647
   m_Property:
     name: Scale
@@ -4359,7 +4359,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.38999998569488528,"y":1.0,"z":1.0}'
+      m_SerializableObject: '{"x":0.20000000298023225,"y":1.0,"z":1.0}'
     m_Space: 2147483647
   m_Property:
     name: Scale

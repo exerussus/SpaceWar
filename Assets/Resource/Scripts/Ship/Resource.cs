@@ -1,78 +1,77 @@
 ﻿
 using System;
-using UnityEngine;
 
 [Serializable]
 public struct Resource
 {
-    [SerializeField] private float currentValue;
-    [SerializeField] private float maxValue;
-    public float CurrentValue => currentValue;
-    public float MaxValue => maxValue;
+    private float _currentValue;
+    private float _maxValue;
+    public float CurrentValue => _currentValue;
+    public float MaxValue => _maxValue;
 
     public Resource(float value)
     {
         if (value > 0)
         {
-            maxValue = value;
-            currentValue = maxValue;
+            _maxValue = value;
+            _currentValue = _maxValue;
         }
         else throw new Exception("The value must be greater than zero.");
     }
 
     public void RestoreMax()
     {
-        currentValue = maxValue;
+        _currentValue = _maxValue;
     }
     
     public void SetMax(float value)
     {
         if (value <= 0) return;
-        maxValue = value;
+        _maxValue = value;
     }
     
     public void IncreaseMax(float value)
     {
         if (value <= 0) return;
-        maxValue += value;
+        _maxValue += value;
     }
     
     public void ReduceMax(float value)
     {
         if (value <= 0) return;
-        maxValue -= value;
-        if (currentValue > maxValue) currentValue = maxValue;
+        _maxValue -= value;
+        if (_currentValue > _maxValue) _currentValue = _maxValue;
     }
     
     public void IncreaseCurrent(float value)
     {
         if (value <= 0) return;
-        currentValue += value;
-        if (currentValue > maxValue) currentValue = maxValue;
+        _currentValue += value;
+        if (_currentValue > _maxValue) _currentValue = _maxValue;
     }
     
     public void ReduceCurrent(float value)
     {
         if (value <= 0) return;
-        currentValue -= value;
-        if (currentValue <= 0f)
+        _currentValue -= value;
+        if (_currentValue <= 0f)
         {
-            currentValue = 0f;
+            _currentValue = 0f;
         }
     }
 
     public void SetEmpty()
     {
-        currentValue = 0f;
+        _currentValue = 0f;
     }
     
     public bool GetIsEnough(float value)
     {
-        return currentValue - value >= 0;
+        return _currentValue - value >= 0;
     }
     
     public bool GetIsEmpty()
     {
-        return currentValue == 0f;
+        return _currentValue == 0f;
     }
 }
