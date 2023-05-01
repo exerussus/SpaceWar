@@ -57,6 +57,7 @@
      <Compile Include="Assets\Resource\Scripts\Weapon\WeaponParameter.cs" />
      <Compile Include="Assets\Resource\Scripts\Ship\ShipAmmoRestorer.cs" />
      <Compile Include="Assets\Resource\Scripts\Ship\Resource.cs" />
+     <Compile Include="Assets\Resource\Scripts\Ship\ShipResourceObserver.cs" />
      <Compile Include="Assets\Resource\Scripts\Weapon\RayParameter.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />

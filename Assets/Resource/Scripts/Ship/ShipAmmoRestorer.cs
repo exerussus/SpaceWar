@@ -4,16 +4,16 @@ using UnityEngine;
 [RequireComponent(typeof(ShipResource))]
 public class ShipAmmoRestorer : MonoBehaviour
 {
-    [SerializeField] private ShipResource shipResource;
+    private ShipResource shipResource;
     private float _stopRestoreTime = 0.4f;
     private float _stopRestoreTimer;
     private float _ammoDenominator;
 
-    private void Start()
+    private void OnValidate()
     {
         shipResource = shipResource == null ? GetComponent<ShipResource>() : shipResource;
     }
-
+    
     private void OnEnable()
     {
         shipResource.OnSpendAmmo += StopToRestore;

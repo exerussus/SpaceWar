@@ -5,22 +5,21 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class ProjectileColliderObserver : MonoBehaviour
 {
-    [SerializeField] private Collider2D collider;
+    private Collider2D _collider;
     private static readonly int DestructibleLayer = LayerMask.NameToLayer("Destructible");
-    private float _lifeTime = 10f;
-    private float _lifeTimer;
 
     public Action<SpaceShip> OnTouchDestructible;
     
-    private void Start()
+    private void OnValidate()
     {
-        collider = collider == null ? GetComponent<Collider2D>() : collider;
+        _collider = _collider == null ? GetComponent<Collider2D>() : _collider;
     }
 
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.layer == DestructibleLayer)
         {
+            _collider.enabled = false;
             var spaceShip = other.gameObject.GetComponent<SpaceShip>();
             OnTouchDestructible?.Invoke(spaceShip);
             DestroyProjectile();
