@@ -54,8 +54,11 @@
      <Compile Include="Assets\Resource\Scripts\Ship\ShipParameter.cs" />
      <Compile Include="Assets\Resource\Scripts\Weapon\ProjectileColliderObserver.cs" />
      <Compile Include="Assets\Resource\Scripts\Ship\SpaceShip.cs" />
+     <Compile Include="Assets\Resource\Scripts\Keyboard\PlayerKeyboardController.cs" />
+     <Compile Include="Assets\Resource\Scripts\Weapon\ProjectileLifeController.cs" />
      <Compile Include="Assets\Resource\Scripts\Weapon\WeaponParameter.cs" />
      <Compile Include="Assets\Resource\Scripts\Ship\ShipAmmoRestorer.cs" />
+     <Compile Include="Assets\Resource\Scripts\Keyboard\KeyboardController.cs" />
      <Compile Include="Assets\Resource\Scripts\Ship\Resource.cs" />
      <Compile Include="Assets\Resource\Scripts\Ship\ShipResourceObserver.cs" />
      <Compile Include="Assets\Resource\Scripts\Weapon\RayParameter.cs" />
@@ -65,6 +68,7 @@
      <Folder Include="Assets\Resource" />
      <Folder Include="Assets\Resource\Scripts" />
      <Folder Include="Assets\Settings" />
+     <Folder Include="Assets\Resource\Scripts\Keyboard" />
      <Folder Include="Assets\Data\ShipParameters" />
      <Folder Include="Assets\Resource\VFX" />
      <Folder Include="Assets\Settings\Scenes" />

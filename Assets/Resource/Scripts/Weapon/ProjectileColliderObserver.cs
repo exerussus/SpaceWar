@@ -9,6 +9,7 @@ public class ProjectileColliderObserver : MonoBehaviour
     private static readonly int DestructibleLayer = LayerMask.NameToLayer("Destructible");
 
     public Action<SpaceShip> OnTouchDestructible;
+    public Action OnTouch;
     
     private void OnValidate()
     {
@@ -22,12 +23,7 @@ public class ProjectileColliderObserver : MonoBehaviour
             _collider.enabled = false;
             var spaceShip = other.gameObject.GetComponent<SpaceShip>();
             OnTouchDestructible?.Invoke(spaceShip);
-            DestroyProjectile();
         }
-    }
-    
-    private void DestroyProjectile()
-    {
-        Destroy(gameObject);
+        OnTouch?.Invoke();
     }
 }
